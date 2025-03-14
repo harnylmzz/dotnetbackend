@@ -7,13 +7,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="12.0.0-preview1" />
+    <PackageReference Include="MediatR" Version="12.4.1" />
+    <PackageReference Include="MediatR.Contracts" Version="2.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.3" />
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Application\Common\Models\" />
+    <Folder Include="Application\Features\Categories\Commands\" />
+    <Folder Include="Application\Features\Categories\Queries\" />
     <Folder Include="Domain\Helpers\" />
-    <Folder Include="Infastructure\" />
-    <Folder Include="Application\" />
+    <Folder Include="Infastructure\Persistence\" />
     <Folder Include="WebApi\" />
   </ItemGroup>
 
